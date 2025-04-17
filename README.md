@@ -1,1 +1,1 @@
-made by (Fabriciofkt157)[https://github.com/Fabriciofkt157]
+made by Fabriciofkt157: https://github.com/Fabriciofkt157
