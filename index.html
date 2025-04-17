@@ -41,10 +41,10 @@
     }
     .produtos {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 2rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
       gap: 2rem;
+      padding: 2rem;
     }
     .produto {
       background: #fff;
@@ -52,6 +52,9 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       overflow: hidden;
       max-width: 300px;
+      min-width: 280px;
+      flex-shrink: 0;
+      position: relative;
       transition: transform 0.3s;
     }
     .produto:hover {
@@ -60,10 +63,29 @@
     .produto img {
       width: 100%;
       height: auto;
+      display: block;
     }
     .produto p {
       padding: 1rem;
       text-align: center;
+      font-weight: bold;
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 250, 240, 0.95);
+      padding: 1rem;
+      box-sizing: border-box;
+      overflow-y: auto;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .produto:hover .tooltip {
+      display: block;
     }
     .sobre {
       background-color: #fef6e4;
@@ -105,14 +127,70 @@
     <div class="produto">
       <img src="img/sabonete1.jpg" alt="Sabonete 1">
       <p>Sabonete de Lavanda</p>
+      <div class="tooltip">
+        <strong>Sabonete Dove: Fórmula e Benefícios</strong><br><br>
+        O sabonete Dove é conhecido por sua fórmula suave, que limpa sem agredir a pele. Diferente dos sabonetes comuns, Dove contém ¼ de creme hidratante, proporcionando uma hidratação profunda. Sua base é composta por sodium cocoyl isethionate (um agente de limpeza derivado do coco), ácido esteárico, laurato de sódio e glicerina. Esses ingredientes ajudam a manter o pH neutro, ideal para peles sensíveis.
+      </div>
     </div>
     <div class="produto">
       <img src="img/sabonete2.jpg" alt="Sabonete 2">
       <p>Sabonete de Mel e Aveia</p>
+      <div class="tooltip">
+        <strong>Como Fazer Sabonete Estilo Dove em Casa</strong><br><br>
+        Ingredientes:<br>
+        - 300g de base glicerinada branca<br>
+        - 1 colher (sopa) de manteiga de karité ou óleo de amêndoas<br>
+        - 1 colher (sopa) de creme hidratante (sem álcool)<br>
+        - 10 gotas de essência de sua preferência (baunilha, lavanda etc.)<br>
+        - Corante cosmético (opcional)<br><br>
+        Modo de preparo:<br>
+        - Derreta a base glicerinada em banho-maria.<br>
+        - Adicione a manteiga de karité e mexa bem.<br>
+        - Acrescente o creme hidratante e a essência.<br>
+        - Misture até ficar homogêneo.<br>
+        - Despeje nas formas de silicone e espere esfriar completamente.<br><br>
+        Esse sabonete caseiro deixa a pele macia e hidratada, com um toque semelhante ao Dove.
+      </div>
     </div>
     <div class="produto">
       <img src="img/sabonete3.jpg" alt="Sabonete 3">
       <p>Sabonete de Argila Branca</p>
+      <div class="tooltip">
+        <strong>Sabonete Dove: A Ciência por Trás da Suavidade</strong><br><br>
+        A fórmula do sabonete Dove é pensada para equilibrar limpeza e hidratação. O ingrediente principal é o sodium cocoyl isethionate, que é um surfactante suave, não agressivo à pele. O diferencial é o uso de emolientes como ácido esteárico e creme hidratante, que formam uma barreira protetora contra o ressecamento. Por isso, Dove é altamente recomendado para peles sensíveis, inclusive de bebês.
+      </div>
+    </div>
+    <div class="produto">
+      <img src="img/sabonete4.jpg" alt="Sabonete de Maracujá">
+      <p>Sabonete de Maracujá</p>
+      <div class="tooltip">
+        <strong>Sabonete de Maracujá: Fórmula Natural</strong><br><br>
+        O sabonete de maracujá é ideal para peles oleosas e estressadas. Ele possui propriedades calmantes e adstringentes, além de ser rico em vitamina C. A fórmula básica pode conter:<br>
+        - Base glicerinada transparente<br>
+        - Óleo de semente de maracujá<br>
+        - Extrato glicólico de maracujá<br>
+        - Corante amarelo cosmético (opcional)<br>
+        - Essência de maracujá<br><br>
+        O óleo de maracujá hidrata sem deixar a pele oleosa, enquanto o extrato ajuda no controle da acne.
+      </div>
+    </div>
+    <div class="produto">
+      <img src="img/sabonete5.jpg" alt="Sabonete Maracujá Caseiro">
+      <p>Sabonete Maracujá Caseiro</p>
+      <div class="tooltip">
+        <strong>Como Fazer Sabonete de Maracujá Artesanal</strong><br><br>
+        Ingredientes:<br>
+        - 300g de base glicerinada transparente<br>
+        - 1 colher (sopa) de óleo de maracujá<br>
+        - 1 colher (chá) de extrato glicólico de maracujá<br>
+        - 10 gotas de essência de maracujá<br>
+        - Corante amarelo (opcional)<br><br>
+        Modo de preparo:<br>
+        - Derreta a base glicerinada em banho-maria.<br>
+        - Adicione o óleo, extrato e a essência.<br>
+        - Misture bem e coloque nas formas.<br>
+        - Deixe secar por cerca de 4 a 6 horas.
+      </div>
     </div>
   </section>
 
