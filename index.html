@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabonetes Naturais</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+    }
+    header {
+      background-color: #f7e7c1;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      color: #a67c00;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #a67c00;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #fff3d1;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #cc9900;
+    }
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+    .produto {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      max-width: 300px;
+      transition: transform 0.3s;
+    }
+    .produto:hover {
+      transform: scale(1.05);
+    }
+    .produto img {
+      width: 100%;
+      height: auto;
+    }
+    .produto p {
+      padding: 1rem;
+      text-align: center;
+    }
+    .sobre {
+      background-color: #fef6e4;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .sobre h3 {
+      color: #a67c00;
+    }
+    footer {
+      background-color: #f7e7c1;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #a67c00;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sabonetes da Terra</h1>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Sinta o natural na sua pele</h2>
+    <p>Sabonetes artesanais com ingredientes naturais e fragrâncias únicas.</p>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <div class="produto">
+      <img src="img/sabonete1.jpg" alt="Sabonete 1">
+      <p>Sabonete de Lavanda</p>
+    </div>
+    <div class="produto">
+      <img src="img/sabonete2.jpg" alt="Sabonete 2">
+      <p>Sabonete de Mel e Aveia</p>
+    </div>
+    <div class="produto">
+      <img src="img/sabonete3.jpg" alt="Sabonete 3">
+      <p>Sabonete de Argila Branca</p>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h3>Feitos com amor e cuidado</h3>
+    <p>Nosso compromisso é com a sua pele e com o planeta. Cada sabonete é feito à mão, com ingredientes naturais e embalagens sustentáveis.</p>
+  </section>
+
+  <footer id="contato">
+    <p>Entre em contato: <a href="mailto:contato@sabonetesdaterra.com">contato@sabonetesdaterra.com</a></p>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+</body>
+</html>
